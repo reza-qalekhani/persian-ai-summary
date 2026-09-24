@@ -1,81 +1,91 @@
 === Persian AI Summary ===
-Contributors: byreza
-Tags: ai, summary, block-editor, posts
+Contributors: Reza Qalekhani
+Tags: ai, summaries, block editor, content, openai
 Requires at least: 6.8
-Requires PHP: 8.3
+Tested up to: 7.1
 Stable tag: 1.0.0
+Requires PHP: 8.3
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-Generate, edit, store, and display plain-text AI summaries for standard WordPress posts.
+Generate, edit, store, and display AI summaries for WordPress posts with an OpenAI-compatible service.
 
 == Description ==
 
-Persian AI Summary gives authorized post editors explicit control over one stored summary per
-standard post. Generation uses the latest saved post content through an administrator-configured
-OpenAI-compatible Chat Completions endpoint. Loading, saving, publishing, and frontend rendering
-never trigger generation.
+Persian AI Summary gives editors full control over one stored summary for each standard WordPress post.
 
-Summaries remain plain text with paragraph breaks. Editors can revise, regenerate, or remove them,
-with confirmations and revision checks protecting manual work from stale AI responses.
+Connect an OpenAI-compatible Chat Completions service, generate a summary from the latest saved post content, refine it in the block editor, and display it with the included dynamic block.
+
+Features include:
+
+* On-demand summary generation from saved post content.
+* Manual editing, confirmed regeneration, and explicit removal.
+* Revision protection that preserves newer editorial changes.
+* A Stored Post Summary block with no frontend AI requests.
+* Configurable instructions, model, input limit, frontend title, heading level, and scoped CSS.
+* API connection testing and recent call logs for administrators.
+* Summary status in the Posts screen.
+* Clear handling of timeouts, rate limits, invalid credentials, and malformed responses.
+* English and Persian (Farsi) translations.
+
+Generation is always initiated by an authorized editor. Loading, saving, publishing, and viewing posts do not automatically contact the AI service.
 
 == Installation ==
 
-1. Install the packaged plugin directory and activate Persian AI Summary.
-2. Open AI Summary > Settings as an administrator.
-3. Enter the full HTTPS Chat Completions endpoint, model, default instructions, and API key.
-4. Optionally set a positive input-character limit and safe frontend CSS declarations.
-
-The API key is stored separately in a non-autoloaded server-side option. The password field is
-always blank: leaving it blank preserves the stored key, entering a value replaces it, and the
-checkbox explicitly removes it. Only a masked preview is displayed in the administrator page.
-
-== Usage ==
-
-Open a standard post and use the AI Summary document settings panel. Generation always reads the
-latest saved content; save the post first when current editor changes must be included. Generated
-text can be edited and saved as a manual revision. Replacing manual text or removing any summary
-requires explicit confirmation.
-
-Insert the Stored Post Summary block where the current stored summary should appear. The dynamic
-block reads storage at render time, escapes the text, preserves paragraphs, and renders nothing
-when no valid summary exists. It never contacts the AI service.
-
-The Posts screen shows whether each post has a stored summary. Administrators can review recent
-provider calls under AI Summary > API Call Logs, including response codes and safe failure reasons.
-
-== Failure behavior ==
-
-Timeouts, invalid credentials, rate limits, unavailable services, invalid responses, oversized
-saved content, concurrent generation, and stale revisions return safe editor messages. Existing
-summary content is preserved, normal WordPress editing and viewing continue, and retries remain an
-explicit editor action. Provider response bodies, prompts, request headers, and credentials are
-not exposed to browser responses or routine logs.
+1. Upload the plugin ZIP through **Plugins > Add New Plugin > Upload Plugin**, or copy the `persian-ai-summary` folder to `/wp-content/plugins/`.
+2. Activate **Persian AI Summary** from the Plugins screen.
+3. Open **AI Summary > Settings**.
+4. Enter the HTTPS Chat Completions endpoint, model, default instructions, and API key.
+5. Save the settings and use **Test API connection** to confirm the service is available.
+6. Open a standard post, save its latest content, and use the **AI Summary** panel to generate a summary.
+7. Add the **Stored Post Summary** block where the summary should appear on the frontend.
 
 == Frequently Asked Questions ==
 
 = Which content types are supported? =
 
-Only standard WordPress posts are supported in this release.
+This release supports standard WordPress posts.
 
 = Does the plugin generate summaries automatically? =
 
-No. Generation and regeneration require an authorized editor action.
+No. Generation and regeneration require an explicit action from a user who can edit the post.
 
-= What is outside this release? =
+= Does generation include unsaved editor changes? =
 
-Automatic generation, background queues, bulk processing, analytics, command-line integration,
-multiple summary variants, cost tracking, other post types, provider registries, and automatic
-retries are intentionally excluded.
+No. The plugin uses the latest saved post content and warns when unsaved changes are present.
+
+= Can I edit an AI-generated summary? =
+
+Yes. You can edit and save the summary as plain text. Replacing manually edited text requires confirmation.
+
+= Does the frontend block contact the AI service? =
+
+No. It reads the stored summary only and renders nothing when no summary exists.
+
+= Which AI providers are supported? =
+
+You can use a service that provides an OpenAI-compatible Chat Completions endpoint.
+
+== External services ==
+
+This plugin connects to the OpenAI-compatible endpoint configured by the site administrator.
+
+When an authorized editor requests generation, the plugin sends the selected model, configured instructions, and latest saved post content to that service. The configured API key is sent in the authorization header. The **Test API connection** action sends a small connection-check request. No request is made during normal post editing, publishing, or frontend rendering.
+
+Data handling, terms, and privacy policies depend on the service selected by the site administrator.
 
 == Changelog ==
 
 = 1.0.0 =
 
-* Added administrator API call logs with response codes and safe failure reasons.
-* Added an AI summary status column to the Posts screen.
-* Added automated plugin ZIP builds for tagged releases.
+* Added on-demand generation through OpenAI-compatible services.
+* Added manual editing, regeneration, removal, and conflict protection.
+* Added administrator settings, connection testing, and recent API call logs.
+* Added the dynamic Stored Post Summary block and frontend presentation controls.
+* Added English and Persian translations.
 
-= 0.9.0 =
+== Upgrade Notice ==
 
-* Initial release.
+= 1.0.0 =
+
+Initial public release of Persian AI Summary.
