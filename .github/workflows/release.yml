@@ -1,0 +1,99 @@
+name: Build and release plugin
+
+on:
+  push:
+    tags:
+      - "v*"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: release-${{ github.ref }}
+  cancel-in-progress: false
+
+env:
+  PLUGIN_FILE: persian-ai-summary.php
+  PLUGIN_SLUG: persian-ai-summary
+
+jobs:
+  release:
+    name: Build and release
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Validate release version
+        id: release
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          version=$(sed -n 's/^[[:space:]]*\* Version:[[:space:]]*//p' "$PLUGIN_FILE" | head -n 1 | tr -d '\r')
+          package_version=$(node -p "require('./package.json').version")
+
+          if [[ ! "$version" =~ ^[0-9]+\.[0-9]+\.[0-9]+([.-][0-9A-Za-z.-]+)?$ ]]; then
+            echo "Invalid plugin version: $version" >&2
+            exit 1
+          fi
+
+          if [[ "$version" != "$package_version" ]]; then
+            echo "Version mismatch: plugin=$version package=$package_version" >&2
+            exit 1
+          fi
+
+          tag="v$version"
+          if [[ "$GITHUB_REF_TYPE" == "tag" && "$GITHUB_REF_NAME" != "$tag" ]]; then
+            echo "Tag $GITHUB_REF_NAME does not match plugin version $tag" >&2
+            exit 1
+          fi
+
+          echo "version=$version" >> "$GITHUB_OUTPUT"
+          echo "tag=$tag" >> "$GITHUB_OUTPUT"
+          echo "zip=$PLUGIN_SLUG-$version.zip" >> "$GITHUB_OUTPUT"
+
+      - name: Install and build
+        run: |
+          npm ci
+          npm run build
+          composer install --no-dev --no-interaction --prefer-dist --optimize-autoloader
+
+      - name: Stage distributable plugin
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p "dist/$PLUGIN_SLUG"
+          rsync -a --exclude-from=.distignore ./ "dist/$PLUGIN_SLUG/"
+
+      - name: Create and verify ZIP
+        shell: bash
+        run: |
+          set -euo pipefail
+          cd dist
+          zip -rq "../${{ steps.release.outputs.zip }}" "$PLUGIN_SLUG"
+          cd ..
+          unzip -t "${{ steps.release.outputs.zip }}"
+
+      - name: Create GitHub release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: >-
+          gh release create
+          "${{ steps.release.outputs.tag }}"
+          "${{ steps.release.outputs.zip }}"
+          --target "${{ github.sha }}"
+          --title "Persian AI Summary ${{ steps.release.outputs.tag }}"
+          --generate-notes

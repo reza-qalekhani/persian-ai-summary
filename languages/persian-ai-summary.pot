@@ -1,0 +1,446 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Persian AI Summary 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/persian-ai-summary\n"
+"POT-Creation-Date: 2026-09-23T00:00:00+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Domain: persian-ai-summary\n"
+
+#. Plugin Name of the plugin
+#: persian-ai-summary.php
+#: includes/WordPress/Admin/SettingsPage.php:53
+#: includes/WordPress/Admin/SettingsPage.php:63
+#: includes/WordPress/Admin/SettingsPage.php:129
+msgid "Persian AI Summary"
+msgstr ""
+
+#. Plugin URI of the plugin
+#: persian-ai-summary.php
+msgid "https://byreza.net/wordpress/persian-ai-summary-plugin/"
+msgstr ""
+
+#. Description of the plugin
+#: persian-ai-summary.php
+msgid "Generate, edit, store, and display AI summaries for WordPress posts."
+msgstr ""
+
+#. Author of the plugin
+#: persian-ai-summary.php
+msgid "Reza Qalekhani"
+msgstr ""
+
+#. Author URI of the plugin
+#: persian-ai-summary.php
+msgid "https://byreza.net"
+msgstr ""
+
+#: persian-ai-summary.php:38
+msgid ""
+"Persian AI Summary dependencies are missing. Run Composer install or "
+"reinstall the packaged plugin."
+msgstr ""
+
+#: src/editor/index.js:39
+msgid "The summary request failed."
+msgstr ""
+
+#: src/editor/index.js:64
+msgid "Discard your unsaved summary edits and continue?"
+msgstr ""
+
+#: src/editor/index.js:105
+msgid "Replace your manually edited summary with a new generated summary?"
+msgstr ""
+
+#: src/editor/index.js:131
+msgid "Permanently remove this summary?"
+msgstr ""
+
+#: includes/WordPress/Admin/PostListColumn.php:49
+#: includes/WordPress/Admin/SettingsPage.php:65
+#: src/editor/index.js:153
+msgid "AI Summary"
+msgstr ""
+
+#: includes/WordPress/Admin/SettingsPage.php:83
+#: includes/WordPress/Admin/SettingsPage.php:84
+#: includes/WordPress/Admin/SettingsPage.php:109
+msgid "API Call Logs"
+msgstr ""
+
+#: includes/WordPress/Admin/SettingsPage.php:113
+msgid "Post title"
+msgstr ""
+
+#: includes/WordPress/Admin/SettingsPage.php:114
+msgid "User"
+msgstr ""
+
+#: includes/WordPress/Admin/SettingsPage.php:115
+msgid "Date and time"
+msgstr ""
+
+#: includes/WordPress/Admin/SettingsPage.php:116
+msgid "Request status"
+msgstr ""
+
+#: includes/WordPress/Admin/SettingsPage.php:117
+msgid "Response code"
+msgstr ""
+
+#: includes/WordPress/Admin/SettingsPage.php:118
+msgid "Failure reason"
+msgstr ""
+
+#: includes/WordPress/Admin/SettingsPage.php:124
+msgid "No API calls have been logged yet."
+msgstr ""
+
+#: includes/WordPress/Admin/SettingsPage.php:133
+msgid "Successful"
+msgstr ""
+
+#: includes/WordPress/Admin/SettingsPage.php:134
+msgid "Failed"
+msgstr ""
+
+#: includes/WordPress/Admin/SettingsPage.php:143
+msgid "(Untitled)"
+msgstr ""
+
+#: includes/WordPress/Admin/SettingsPage.php:149
+msgid "Connection test"
+msgstr ""
+
+#: includes/WordPress/Admin/SettingsPage.php:156
+msgid "Unknown user"
+msgstr ""
+
+#: includes/WordPress/Admin/PostListColumn.php:66
+msgid "No"
+msgstr ""
+
+#: includes/WordPress/Admin/PostListColumn.php:67
+msgid "Yes"
+msgstr ""
+
+#: includes/WordPress/Admin/SettingsPage.php:64
+msgid "Settings"
+msgstr ""
+
+#: includes/WordPress/Admin/SettingsPage.php:72
+#: includes/WordPress/Admin/SettingsPage.php:87
+msgid "AI Summary Help & Guide"
+msgstr ""
+
+#: includes/WordPress/Admin/SettingsPage.php:73
+msgid "Help & Guide"
+msgstr ""
+
+#: includes/WordPress/Admin/SettingsPage.php:88
+msgid "Use this guide to configure the AI service, create summaries, and display them in posts."
+msgstr ""
+
+#: includes/WordPress/Admin/SettingsPage.php:90
+msgid "1. Configure the AI service"
+msgstr ""
+
+#: includes/WordPress/Admin/SettingsPage.php:92
+msgid "Open AI Summary > Settings."
+msgstr ""
+
+#: includes/WordPress/Admin/SettingsPage.php:93
+msgid "Enter an HTTPS Chat Completions endpoint and model, then save the settings."
+msgstr ""
+
+#: includes/WordPress/Admin/SettingsPage.php:94
+msgid "Enter your API key and click Update credential."
+msgstr ""
+
+#: includes/WordPress/Admin/SettingsPage.php:95
+msgid "Click Test API connection and confirm that a success notice appears."
+msgstr ""
+
+#: includes/WordPress/Admin/SettingsPage.php:98
+msgid "2. Generate and edit a summary"
+msgstr ""
+
+#: includes/WordPress/Admin/SettingsPage.php:100
+msgid "Open a post in the block editor and save its latest content."
+msgstr ""
+
+#: includes/WordPress/Admin/SettingsPage.php:101
+msgid "Open the AI Summary panel in the post settings sidebar."
+msgstr ""
+
+#: includes/WordPress/Admin/SettingsPage.php:102
+msgid "Click Generate summary. You can then edit and save, regenerate, or remove the stored summary."
+msgstr ""
+
+#: includes/WordPress/Admin/SettingsPage.php:104
+msgid "Generation uses saved post content, so save the post first to include recent edits."
+msgstr ""
+
+#: includes/WordPress/Admin/SettingsPage.php:106
+msgid "3. Display the summary"
+msgstr ""
+
+#: includes/WordPress/Admin/SettingsPage.php:108
+msgid "Insert the Stored Post Summary block where the summary should appear."
+msgstr ""
+
+#: includes/WordPress/Admin/SettingsPage.php:109
+msgid "Use the frontend title, title element, and CSS settings to control its presentation."
+msgstr ""
+
+#: includes/WordPress/Admin/SettingsPage.php:111
+msgid "The block displays only the stored summary for the current standard post and does not call the AI service."
+msgstr ""
+
+#: src/editor/index.js:158
+msgid "Generation uses the latest saved post content and excludes unsaved changes."
+msgstr ""
+
+#: src/editor/index.js:174
+msgid "Summary text"
+msgstr ""
+
+#: src/editor/index.js:181
+msgid "Save summary"
+msgstr ""
+
+#: src/editor/index.js:189
+msgid "Regenerate summary"
+msgstr ""
+
+#: src/editor/index.js:190
+msgid "Generate summary"
+msgstr ""
+
+#: src/editor/index.js:198
+msgid "Remove summary"
+msgstr ""
+
+#: src/blocks/summary/block.json
+msgctxt "block title"
+msgid "Stored Post Summary"
+msgstr ""
+
+#: src/blocks/summary/block.json
+msgctxt "block description"
+msgid "Displays the stored AI summary for the current post."
+msgstr ""
+
+#: src/blocks/summary/edit.js:31
+msgid "The stored summary could not be loaded."
+msgstr ""
+
+#: src/blocks/summary/edit.js:61
+msgid "No stored summary is available for this post."
+msgstr ""
+
+#: includes/AI/OpenAICompatibleProvider.php:173
+#: includes/WordPress/Rest/SummaryController.php:284
+msgid "The AI service timed out. Please try again."
+msgstr ""
+
+#: includes/AI/OpenAICompatibleProvider.php:174
+#: includes/WordPress/Rest/SummaryController.php:283
+msgid "The AI service is unavailable. Please try again later."
+msgstr ""
+
+#: includes/AI/OpenAICompatibleProvider.php:175
+#: includes/WordPress/Rest/SummaryController.php:282
+msgid "The AI service rejected the configured credentials."
+msgstr ""
+
+#: includes/AI/OpenAICompatibleProvider.php:176
+#: includes/WordPress/Rest/SummaryController.php:279
+msgid "The AI service rate limit was reached. Please try again later."
+msgstr ""
+
+#: includes/AI/OpenAICompatibleProvider.php:177
+msgid "The AI service rejected the summary request."
+msgstr ""
+
+#: includes/AI/OpenAICompatibleProvider.php:178
+#: includes/WordPress/Rest/SummaryController.php:281
+msgid "The AI service returned an invalid or incomplete response."
+msgstr ""
+
+#: includes/Application/SummaryService.php:280
+#: includes/WordPress/Rest/SummaryController.php:275
+msgid "The summary changed. Reload it and try again."
+msgstr ""
+
+#: includes/Application/SummaryService.php:281
+msgid "The saved post content cannot be summarized."
+msgstr ""
+
+#: includes/Application/SummaryService.php:282
+msgid "No stored summary was found."
+msgstr ""
+
+#: includes/Application/SummaryService.php:283
+#: includes/WordPress/Rest/SummaryController.php:278
+msgid "The saved post content exceeds the configured input limit."
+msgstr ""
+
+#: includes/Application/SummaryService.php:284
+#: includes/WordPress/Rest/SummaryController.php:276
+msgid "A summary is already being generated for this post."
+msgstr ""
+
+#: includes/Application/SummaryService.php:285
+#: includes/WordPress/Rest/SummaryController.php:277
+msgid "The summary changed while generation was in progress. Your newer version was kept."
+msgstr ""
+
+#: includes/WordPress/Admin/Settings.php:188
+msgid "Enter a valid HTTPS endpoint, model, instructions, and optional positive input limit."
+msgstr ""
+
+#: includes/WordPress/Admin/SettingsPage.php:83
+#: includes/WordPress/Admin/SettingsPage.php:121
+#: includes/WordPress/Admin/SettingsPage.php:223
+#: includes/WordPress/Admin/SettingsPage.php:241
+msgid "You cannot manage AI summary settings."
+msgstr ""
+
+#: includes/WordPress/Admin/SettingsPage.php:135
+msgid "Provider"
+msgstr ""
+
+#: includes/WordPress/Admin/SettingsPage.php:138
+msgid "This plugin currently supports OpenAI-compatible Chat Completions providers."
+msgstr ""
+
+#: includes/WordPress/Admin/SettingsPage.php:141
+msgid "Enter the complete HTTPS URL for the provider Chat Completions endpoint."
+msgstr ""
+
+#: includes/WordPress/Admin/SettingsPage.php:142
+msgid "Enter the exact model identifier accepted by the provider."
+msgstr ""
+
+#: includes/WordPress/Admin/SettingsPage.php:154
+msgid "Optionally limit the post content sent to the provider. Leave blank for no plugin-defined limit."
+msgstr ""
+
+#: includes/WordPress/Admin/SettingsPage.php:157
+msgid "Optional heading displayed above the summary block. Leave blank to hide it."
+msgstr ""
+
+#: includes/WordPress/Admin/SettingsPage.php:166
+msgid "Choose the heading level used when a frontend title is set."
+msgstr ""
+
+#: includes/WordPress/Admin/SettingsPage.php:141
+msgid "HTTPS Chat Completions endpoint"
+msgstr ""
+
+#: includes/WordPress/Admin/SettingsPage.php:142
+msgid "Model"
+msgstr ""
+
+#: includes/WordPress/Admin/SettingsPage.php:144
+msgid "Default instructions"
+msgstr ""
+
+#: includes/WordPress/Admin/SettingsPage.php:147
+msgid "These instructions are sent with the saved post content. Available placeholders: {{paragraph_count}}, {{word_count}}, and {{language}}."
+msgstr ""
+
+#: includes/WordPress/Admin/SettingsPage.php:151
+msgid "Maximum input characters"
+msgstr ""
+
+#: includes/WordPress/Admin/SettingsPage.php:157
+msgid "Frontend title"
+msgstr ""
+
+#: includes/WordPress/Admin/SettingsPage.php:159
+msgid "Title HTML element"
+msgstr ""
+
+#: includes/WordPress/Admin/SettingsPage.php:170
+msgid "Frontend CSS declarations"
+msgstr ""
+
+#: includes/WordPress/Admin/SettingsPage.php:173
+msgid ""
+"Enter declarations only, such as color: #222; padding: 1rem;. Selectors and "
+"at-rules are not accepted."
+msgstr ""
+
+#: includes/WordPress/Admin/SettingsPage.php:177
+msgid "Save settings"
+msgstr ""
+
+#: includes/WordPress/Admin/SettingsPage.php:180
+msgid "API credential"
+msgstr ""
+
+#: includes/WordPress/Admin/SettingsPage.php:186
+msgid "API key"
+msgstr ""
+
+#: includes/WordPress/Admin/SettingsPage.php:196
+msgid "No API key is currently stored."
+msgstr ""
+
+#: includes/WordPress/Admin/SettingsPage.php:193
+msgid "Stored API key"
+msgstr ""
+
+#: includes/WordPress/Admin/SettingsPage.php:189
+msgid "Leave blank to preserve the stored credential."
+msgstr ""
+
+#: includes/WordPress/Admin/SettingsPage.php:199
+msgid "Remove the stored credential"
+msgstr ""
+
+#: includes/WordPress/Admin/SettingsPage.php:204
+msgid "Update credential"
+msgstr ""
+
+#: includes/WordPress/Admin/SettingsPage.php:207
+msgid "API connection"
+msgstr ""
+
+#: includes/WordPress/Admin/SettingsPage.php:211
+#: includes/WordPress/Admin/SettingsPage.php:250
+msgid "Save the endpoint, model, and API key before testing."
+msgstr ""
+
+#: includes/WordPress/Admin/SettingsPage.php:212
+msgid "Test API connection"
+msgstr ""
+
+#: includes/WordPress/Admin/SettingsPage.php:256
+msgid "The API connection was successful."
+msgstr ""
+
+#: includes/WordPress/Rest/SummaryController.php:215
+msgid "You must be logged in to manage post summaries."
+msgstr ""
+
+#: includes/WordPress/Rest/SummaryController.php:223
+msgid "You cannot edit the summary for this post."
+msgstr ""
+
+#: includes/WordPress/Rest/SummaryController.php:273
+#: includes/WordPress/Rest/SummaryController.php:280
+msgid "The summary request is invalid."
+msgstr ""
+
+#: includes/WordPress/Rest/SummaryController.php:274
+msgid "The requested post or summary was not found."
+msgstr ""

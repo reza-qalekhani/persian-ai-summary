@@ -1,0 +1,21 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "persian-ai-summary/summary",
+  "version": "1.0.0",
+  "title": "Stored Post Summary",
+  "category": "text",
+  "icon": "text-page",
+  "description": "Displays the stored AI summary for the current post.",
+  "textdomain": "persian-ai-summary",
+  "usesContext": [
+    "postId",
+    "postType"
+  ],
+  "supports": {
+    "html": false
+  },
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}

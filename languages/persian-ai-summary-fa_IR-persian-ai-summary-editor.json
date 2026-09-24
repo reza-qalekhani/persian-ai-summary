@@ -1,0 +1,39 @@
+{
+  "translation-revision-date": "2026-09-23 00:00+0000",
+  "generator": "Persian AI Summary",
+  "source": "src/editor/index.js",
+  "domain": "messages",
+  "locale_data": {
+    "messages": {
+      "": {
+        "domain": "messages",
+        "lang": "fa_IR",
+        "plural-forms": "nplurals=2; plural=(n==0 || n==1);"
+      },
+      "Permanently remove this summary?": [
+        "حذف دائمی چکیده؟"
+      ],
+      "AI Summary": [
+        "چکیده‌ساز هوشمند"
+      ],
+      "Generation uses the latest saved post content and excludes unsaved changes.": [
+        "فرآیند تولید چکیده از آخرین نسخه ذخیره شده نوشته استفاده می‌کند و تغییرات ذخیره‌نشده را نادیده می‌گیرد."
+      ],
+      "Summary text": [
+        "متن چکیده"
+      ],
+      "Save summary": [
+        "ذخیره چکیده"
+      ],
+      "Regenerate summary": [
+        "بازسازی چکیده"
+      ],
+      "Generate summary": [
+        "ایجاد چکیده"
+      ],
+      "Remove summary": [
+        "حذف چکیده"
+      ]
+    }
+  }
+}

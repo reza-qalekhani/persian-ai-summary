@@ -1,0 +1,503 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Persian AI Summary 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/persian-ai-"
+"summary\n"
+"POT-Creation-Date: 2026-09-23T00:00:00+00:00\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fa_IR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Domain: persian-ai-summary\n"
+"X-Generator: Poedit 2.2\n"
+"Plural-Forms: nplurals=2; plural=(n==0 || n==1);\n"
+
+#. Plugin Name of the plugin
+#: persian-ai-summary.php includes/WordPress/Admin/SettingsPage.php:53
+#: includes/WordPress/Admin/SettingsPage.php:63
+#: includes/WordPress/Admin/SettingsPage.php:129
+msgid "Persian AI Summary"
+msgstr "چکیده‌ساز هوشمند"
+
+#. Plugin URI of the plugin
+#: persian-ai-summary.php
+msgid "https://byreza.net/wordpress/persian-ai-summary-plugin/"
+msgstr "https://byreza.net/wordpress/persian-ai-summary-plugin/"
+
+#. Description of the plugin
+#: persian-ai-summary.php
+msgid "Generate, edit, store, and display AI summaries for WordPress posts."
+msgstr ""
+"تولید، ویرایش، ذخیره و نمایش چکیده نوشته‌های وردپرس با استفاده از هوش مصنوعی."
+
+#. Author of the plugin
+#: persian-ai-summary.php
+msgid "Reza Qalekhani"
+msgstr "رضا قلعه‌خانی"
+
+#. Author URI of the plugin
+#: persian-ai-summary.php
+msgid "https://byreza.net"
+msgstr "https://byreza.net"
+
+#: persian-ai-summary.php:38
+msgid ""
+"Persian AI Summary dependencies are missing. Run Composer install or "
+"reinstall the packaged plugin."
+msgstr ""
+"پیش‌نیازهای افزونه چکیده‌ساز هوشمند نصب نشده است. ابتدا پکیج‌های موردنیاز را "
+"توسط composer نصب کنید، سپس افزونه را دوباره نصب کنید."
+
+#: src/editor/index.js:39
+msgid "The summary request failed."
+msgstr "درخواست چکیده شکست خورد."
+
+#: src/editor/index.js:64
+msgid "Discard your unsaved summary edits and continue?"
+msgstr "ویرایش‌های ذخیره‌نشده چکیده حذف می‌شوند. ادامه می‌دهید؟"
+
+#: src/editor/index.js:105
+msgid "Replace your manually edited summary with a new generated summary?"
+msgstr ""
+"چکیده‌ای که به صورت دستی ویرایش کرده‌اید حذف شده و چکیده جدید جایگزین می‌شود. "
+"ادامه می‌دهید؟"
+
+#: src/editor/index.js:131
+msgid "Permanently remove this summary?"
+msgstr "حذف دائمی چکیده؟"
+
+#: includes/WordPress/Admin/PostListColumn.php:49
+#: includes/WordPress/Admin/SettingsPage.php:65 src/editor/index.js:153
+msgid "AI Summary"
+msgstr "چکیده هوشمند"
+
+#: includes/WordPress/Admin/SettingsPage.php:83
+#: includes/WordPress/Admin/SettingsPage.php:84
+#: includes/WordPress/Admin/SettingsPage.php:109
+msgid "API Call Logs"
+msgstr "لاگ درخواست‌ها"
+
+#: includes/WordPress/Admin/SettingsPage.php:113
+msgid "Post title"
+msgstr "عنوان نوشته"
+
+#: includes/WordPress/Admin/SettingsPage.php:114
+msgid "User"
+msgstr "کاربر"
+
+#: includes/WordPress/Admin/SettingsPage.php:115
+msgid "Date and time"
+msgstr "تاریخ و زمان"
+
+#: includes/WordPress/Admin/SettingsPage.php:116
+msgid "Request status"
+msgstr "وضعیت"
+
+#: includes/WordPress/Admin/SettingsPage.php:117
+msgid "Response code"
+msgstr "کد پاسخ"
+
+#: includes/WordPress/Admin/SettingsPage.php:118
+msgid "Failure reason"
+msgstr "دلیل خطا"
+
+#: includes/WordPress/Admin/SettingsPage.php:124
+msgid "No API calls have been logged yet."
+msgstr "هنوز هیچ لاگی برای درخواست‌های API ثبت نشده است."
+
+#: includes/WordPress/Admin/SettingsPage.php:133
+msgid "Successful"
+msgstr "موفق"
+
+#: includes/WordPress/Admin/SettingsPage.php:134
+msgid "Failed"
+msgstr "ناموفق"
+
+#: includes/WordPress/Admin/SettingsPage.php:143
+msgid "(Untitled)"
+msgstr "(بدون عنوان)"
+
+#: includes/WordPress/Admin/SettingsPage.php:149
+msgid "Connection test"
+msgstr "تست اتصال افزونه"
+
+#: includes/WordPress/Admin/SettingsPage.php:156
+msgid "Unknown user"
+msgstr "ناشناس"
+
+#: includes/WordPress/Admin/PostListColumn.php:66
+msgid "No"
+msgstr "خیر"
+
+#: includes/WordPress/Admin/PostListColumn.php:67
+msgid "Yes"
+msgstr "بله"
+
+#: includes/WordPress/Admin/SettingsPage.php:64
+msgid "Settings"
+msgstr "تنظیمات"
+
+#: includes/WordPress/Admin/SettingsPage.php:72
+#: includes/WordPress/Admin/SettingsPage.php:87
+msgid "AI Summary Help & Guide"
+msgstr "راهنمای افزونه چکیده‌ساز هوشمند"
+
+#: includes/WordPress/Admin/SettingsPage.php:73
+msgid "Help & Guide"
+msgstr "راهنما"
+
+#: includes/WordPress/Admin/SettingsPage.php:88
+msgid ""
+"Use this guide to configure the AI service, create summaries, and display "
+"them in posts."
+msgstr ""
+"با استفاده از این راهنما می‌توانید سرویس‌دهنده هوش مصنوعی، روش تولید چکیده و "
+"نمایش آن در سایت را تنظیم کنید."
+
+#: includes/WordPress/Admin/SettingsPage.php:90
+msgid "1. Configure the AI service"
+msgstr "۱) تنظیمات سرویس‌دهنده هوش مصنوعی"
+
+#: includes/WordPress/Admin/SettingsPage.php:92
+msgid "Open AI Summary > Settings."
+msgstr "وارد تنظیمات افزونه چکیده‌ساز هوشمند شوید."
+
+#: includes/WordPress/Admin/SettingsPage.php:93
+msgid ""
+"Enter an HTTPS Chat Completions endpoint and model, then save the settings."
+msgstr ""
+"اندپوینت API سرویس‌دهنده (حالت Chat Completions) را وارد کرده و مدل دلخواه خود "
+"را انتخاب کنید. تنظیمات را ذخیره کنید."
+
+#: includes/WordPress/Admin/SettingsPage.php:94
+msgid "Enter your API key and click Update credential."
+msgstr "کلید API خود را وارد کرده و روی دکمه «به‌روزرسانی» کلیک کنید."
+
+#: includes/WordPress/Admin/SettingsPage.php:95
+msgid "Click Test API connection and confirm that a success notice appears."
+msgstr ""
+"روی دکمه «بررسی اتصال API» کلیک کنید و منتظر بمانید تا پاسخ موفق از "
+"سرویس‌دهنده نمایش داده شود."
+
+#: includes/WordPress/Admin/SettingsPage.php:98
+msgid "2. Generate and edit a summary"
+msgstr "۲) تولید و ویرایش چکیده"
+
+#: includes/WordPress/Admin/SettingsPage.php:100
+msgid "Open a post in the block editor and save its latest content."
+msgstr "یک نوشته را باز کنید و محتوای آن را ذخیره کنید."
+
+#: includes/WordPress/Admin/SettingsPage.php:101
+msgid "Open the AI Summary panel in the post settings sidebar."
+msgstr "از سایدبار سمت چپ ادیتور، پنل چکیده هوشمند را باز کنید."
+
+#: includes/WordPress/Admin/SettingsPage.php:102
+msgid ""
+"Click Generate summary. You can then edit and save, regenerate, or remove the "
+"stored summary."
+msgstr ""
+"روی دکمه تولید چکیده کلیک کنید. شما می‌توانید محتوای چکیده را ویرایش، ذخیره، "
+"بازسازی و یا حذف کنید."
+
+#: includes/WordPress/Admin/SettingsPage.php:104
+msgid ""
+"Generation uses saved post content, so save the post first to include recent "
+"edits."
+msgstr ""
+"فرآیند تولید چکیده از آخرین نسخه ذخیره شده نوشته استفاده می‌کند. بنابراین قبل "
+"از تولید چکیده، حتماً آن را ذخیره کنید."
+
+#: includes/WordPress/Admin/SettingsPage.php:106
+msgid "3. Display the summary"
+msgstr "۳) نمایش چکیده"
+
+#: includes/WordPress/Admin/SettingsPage.php:108
+msgid "Insert the Stored Post Summary block where the summary should appear."
+msgstr "بلوک «چکیده هوشمند نوشته» را در محل مدنظر خود قرار دهید."
+
+#: includes/WordPress/Admin/SettingsPage.php:109
+msgid ""
+"Use the frontend title, title element, and CSS settings to control its "
+"presentation."
+msgstr ""
+"با استفاده از تنظیمات افزونه می‌توانید عنوان بخش چکیده و استایل خروجی را تنظیم "
+"کنید."
+
+#: includes/WordPress/Admin/SettingsPage.php:111
+msgid ""
+"The block displays only the stored summary for the current standard post and "
+"does not call the AI service."
+msgstr ""
+"بلوک «چکیده هوشمند نوشته» فقط چکیده ذخیره شده را نمایش می‌دهد و هیچ‌گونه "
+"فراخوانی API در حین نمایش صورت نمی‌گیرد."
+
+#: src/editor/index.js:158
+msgid ""
+"Generation uses the latest saved post content and excludes unsaved changes."
+msgstr ""
+"فرآیند تولید چکیده از آخرین نسخه ذخیره شده نوشته استفاده می‌کند و تغییرات "
+"ذخیره‌نشده را نادیده می‌گیرد."
+
+#: src/editor/index.js:174
+msgid "Summary text"
+msgstr "متن چکیده"
+
+#: src/editor/index.js:181
+msgid "Save summary"
+msgstr "ذخیره چکیده"
+
+#: src/editor/index.js:189
+msgid "Regenerate summary"
+msgstr "بازسازی چکیده"
+
+#: src/editor/index.js:190
+msgid "Generate summary"
+msgstr "ایجاد چکیده"
+
+#: src/editor/index.js:198
+msgid "Remove summary"
+msgstr "حذف چکیده"
+
+#: src/blocks/summary/block.json
+msgctxt "block title"
+msgid "Stored Post Summary"
+msgstr "چکیده هوشمند نوشته"
+
+#: src/blocks/summary/block.json
+msgctxt "block description"
+msgid "Displays the stored AI summary for the current post."
+msgstr "چکیده هوشمند این نوشته را نمایش می‌دهد."
+
+#: src/blocks/summary/edit.js:31
+msgid "The stored summary could not be loaded."
+msgstr "چکیده ذخیره‌شده قابل بارگذاری نیست."
+
+#: src/blocks/summary/edit.js:61
+msgid "No stored summary is available for this post."
+msgstr "هیچ چکیده ذخیره‌شده‌ای برای این نوشته وجود ندارد."
+
+#: includes/AI/OpenAICompatibleProvider.php:173
+#: includes/WordPress/Rest/SummaryController.php:284
+msgid "The AI service timed out. Please try again."
+msgstr "دریافت پاسخ از سرویس‌دهنده AI طولانی شد. لطفاً دوباره تلاش کنید."
+
+#: includes/AI/OpenAICompatibleProvider.php:174
+#: includes/WordPress/Rest/SummaryController.php:283
+msgid "The AI service is unavailable. Please try again later."
+msgstr "سرویس‌دهنده AI در دسترس نیست. لطفاً دوباره تلاش کنید."
+
+#: includes/AI/OpenAICompatibleProvider.php:175
+#: includes/WordPress/Rest/SummaryController.php:282
+msgid "The AI service rejected the configured credentials."
+msgstr "سرویس‌دهنده AI اطلاعات وارد شده برای را نپذیرفت."
+
+#: includes/AI/OpenAICompatibleProvider.php:176
+#: includes/WordPress/Rest/SummaryController.php:279
+msgid "The AI service rate limit was reached. Please try again later."
+msgstr "حد مصرف شما در سرویس‌دهنده AI به پایان رسیده است. لطفاً دوباره تلاش کنید."
+
+#: includes/AI/OpenAICompatibleProvider.php:177
+msgid "The AI service rejected the summary request."
+msgstr "سرویس‌دهنده AI درخواست ساخت چکیده را نپذیرفت."
+
+#: includes/AI/OpenAICompatibleProvider.php:178
+#: includes/WordPress/Rest/SummaryController.php:281
+msgid "The AI service returned an invalid or incomplete response."
+msgstr "سرویس‌دهنده AI یک پاسخ نامعتبر یا ناقص را ارسال کرده است."
+
+#: includes/Application/SummaryService.php:280
+#: includes/WordPress/Rest/SummaryController.php:275
+msgid "The summary changed. Reload it and try again."
+msgstr "چکیده تغییر کرد. لطفاً صفحه را مجدد بارگذاری کنید."
+
+#: includes/Application/SummaryService.php:281
+msgid "The saved post content cannot be summarized."
+msgstr "محتوای نوشته قابلیت ساخت چکیده ندارد."
+
+#: includes/Application/SummaryService.php:282
+msgid "No stored summary was found."
+msgstr "هیچ چکیده ذخیره‌شده‌ای یافت نشد."
+
+#: includes/Application/SummaryService.php:283
+#: includes/WordPress/Rest/SummaryController.php:278
+msgid "The saved post content exceeds the configured input limit."
+msgstr ""
+"محتوای نوشته از حداکثر کاراکتر ورودی قابل قبول در تنظیمات افزونه بیشتر است."
+
+#: includes/Application/SummaryService.php:284
+#: includes/WordPress/Rest/SummaryController.php:276
+msgid "A summary is already being generated for this post."
+msgstr "هم‌اکنون چکیده این نوشته در حال تولید است."
+
+#: includes/Application/SummaryService.php:285
+#: includes/WordPress/Rest/SummaryController.php:277
+msgid ""
+"The summary changed while generation was in progress. Your newer version was "
+"kept."
+msgstr "چکیده نوشته در حین فرآیند تولید تغییر داده شده است. نسخه جدیدتر حفظ شد."
+
+#: includes/WordPress/Admin/Settings.php:188
+msgid ""
+"Enter a valid HTTPS endpoint, model, instructions, and optional positive "
+"input limit."
+msgstr "یک اندپوینت معتبر، شناسه مدل و دستورالعمل چکیده‌سازی وارد کنید."
+
+#: includes/WordPress/Admin/SettingsPage.php:83
+#: includes/WordPress/Admin/SettingsPage.php:121
+#: includes/WordPress/Admin/SettingsPage.php:223
+#: includes/WordPress/Admin/SettingsPage.php:241
+msgid "You cannot manage AI summary settings."
+msgstr "شما نمی‌توانید تنظیمات افزونه چکیده‌ساز هوشمند را تغییر دهید."
+
+#: includes/WordPress/Admin/SettingsPage.php:135
+msgid "Provider"
+msgstr "سرویس‌دهنده"
+
+#: includes/WordPress/Admin/SettingsPage.php:138
+msgid ""
+"This plugin currently supports OpenAI-compatible Chat Completions providers."
+msgstr ""
+"این افزونه در حال حاضر فقط از سرویس‌دهنده‌های سازگار با فرمت OpenAI پشتیبانی "
+"می‌کند."
+
+#: includes/WordPress/Admin/SettingsPage.php:141
+msgid "Enter the complete HTTPS URL for the provider Chat Completions endpoint."
+msgstr ""
+"آدرس کامل اندپوینت API سرویس‌دهنده (حالت Chat Completions) را به همراه HTTPS "
+"وارد کنید."
+
+#: includes/WordPress/Admin/SettingsPage.php:142
+msgid "Enter the exact model identifier accepted by the provider."
+msgstr "شناسه مدل انتخابی را به صورت دقیق وارد کنید."
+
+#: includes/WordPress/Admin/SettingsPage.php:154
+msgid ""
+"Optionally limit the post content sent to the provider. Leave blank for no "
+"plugin-defined limit."
+msgstr ""
+"(اختیاری) حداکثر کاراکتر ارسالی به مدل را مشخص کنید. اگر خالی باشد، هیچ‌گونه "
+"محدودیتی اعمال نمی‌شود."
+
+#: includes/WordPress/Admin/SettingsPage.php:157
+msgid ""
+"Optional heading displayed above the summary block. Leave blank to hide it."
+msgstr ""
+"(اختیاری) عنوان نمایشی بلوک چکیده هوشمند در سایت را مشخص کنید. اگر خالی باشد، "
+"مخفی می‌شود."
+
+#: includes/WordPress/Admin/SettingsPage.php:166
+msgid "Choose the heading level used when a frontend title is set."
+msgstr "مشخص کنید عنوان نمایشی بلوک چکیده با چه نوع heading نمایش داده شود."
+
+#: includes/WordPress/Admin/SettingsPage.php:141
+msgid "HTTPS Chat Completions endpoint"
+msgstr "اندپوینت API سرویس‌دهنده"
+
+#: includes/WordPress/Admin/SettingsPage.php:142
+msgid "Model"
+msgstr "مدل انتخابی"
+
+#: includes/WordPress/Admin/SettingsPage.php:144
+msgid "Default instructions"
+msgstr "دستورالعمل پیش‌فرض"
+
+#: includes/WordPress/Admin/SettingsPage.php:147
+msgid ""
+"These instructions are sent with the saved post content. Available "
+"placeholders: {{paragraph_count}}, {{word_count}}, and {{language}}."
+msgstr ""
+"این دستورالعمل‌ها به عنوان prompt به همراه بدنه نوشته به AI ارسال می‌شود. "
+"متغیرهای در دسترس: {{paragraph_count}} - {{word_count}} - {{language}}."
+
+#: includes/WordPress/Admin/SettingsPage.php:151
+msgid "Maximum input characters"
+msgstr "حداکثر کاراکتر ورودی"
+
+#: includes/WordPress/Admin/SettingsPage.php:157
+msgid "Frontend title"
+msgstr "عنوان نمایشی در سایت"
+
+#: includes/WordPress/Admin/SettingsPage.php:159
+msgid "Title HTML element"
+msgstr "المان عنوان نمایشی"
+
+#: includes/WordPress/Admin/SettingsPage.php:170
+msgid "Frontend CSS declarations"
+msgstr "استایل‌های CSS خروجی"
+
+#: includes/WordPress/Admin/SettingsPage.php:173
+msgid ""
+"Enter declarations only, such as color: #222; padding: 1rem;. Selectors and "
+"at-rules are not accepted."
+msgstr ""
+"فقط پراپرتی‌های CSS قابل قبول هستند. مثل color: #222; padding: 1rem; سلکتورها "
+"و at-ruleها را وارد نکنید."
+
+#: includes/WordPress/Admin/SettingsPage.php:177
+msgid "Save settings"
+msgstr "ذخیره تنظیمات"
+
+#: includes/WordPress/Admin/SettingsPage.php:180
+msgid "API credential"
+msgstr "تنظیمات API"
+
+#: includes/WordPress/Admin/SettingsPage.php:186
+msgid "API key"
+msgstr "کلید API"
+
+#: includes/WordPress/Admin/SettingsPage.php:196
+msgid "No API key is currently stored."
+msgstr "هیچ کلید API تنظیم نشده است."
+
+#: includes/WordPress/Admin/SettingsPage.php:193
+msgid "Stored API key"
+msgstr "کلید API ذخیره‌شده"
+
+#: includes/WordPress/Admin/SettingsPage.php:189
+msgid "Leave blank to preserve the stored credential."
+msgstr "در صورتی که نمی‌خواهید کلید API تغییر کند، این فیلد را خالی بگذارید."
+
+#: includes/WordPress/Admin/SettingsPage.php:199
+msgid "Remove the stored credential"
+msgstr "حذف کلیدهای ذخیره شده"
+
+#: includes/WordPress/Admin/SettingsPage.php:204
+msgid "Update credential"
+msgstr "به‌روزرسانی API"
+
+#: includes/WordPress/Admin/SettingsPage.php:207
+msgid "API connection"
+msgstr "اتصال API"
+
+#: includes/WordPress/Admin/SettingsPage.php:211
+#: includes/WordPress/Admin/SettingsPage.php:250
+msgid "Save the endpoint, model, and API key before testing."
+msgstr "قبل از بررسی اتصال، اندپوینت API، مدل انتخابی و کلید API را ذخیره کنید."
+
+#: includes/WordPress/Admin/SettingsPage.php:212
+msgid "Test API connection"
+msgstr "بررسی اتصال API"
+
+#: includes/WordPress/Admin/SettingsPage.php:256
+msgid "The API connection was successful."
+msgstr "ارتباط با سرور API با موفقیت برقرار شد."
+
+#: includes/WordPress/Rest/SummaryController.php:215
+msgid "You must be logged in to manage post summaries."
+msgstr "شما برای تولید چکیده نوشته‌ها باید به حساب کاربری خود وارد شوید."
+
+#: includes/WordPress/Rest/SummaryController.php:223
+msgid "You cannot edit the summary for this post."
+msgstr "شما نمی‌توانید چکیده این نوشته را ویرایش کنید."
+
+#: includes/WordPress/Rest/SummaryController.php:273
+#: includes/WordPress/Rest/SummaryController.php:280
+msgid "The summary request is invalid."
+msgstr "درخواست تولید چکیده نامعتبر است."
+
+#: includes/WordPress/Rest/SummaryController.php:274
+msgid "The requested post or summary was not found."
+msgstr "نوشته یا چکیده درخواستی یافت نشد."
